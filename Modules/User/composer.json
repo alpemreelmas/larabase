@@ -27,5 +27,7 @@
         "psr-4": {
             "Modules\\User\\Tests\\": "tests/"
         }
+    },
+    "require": {
     }
 }
