@@ -6,6 +6,11 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Hash;
+use Modules\User\App\Http\Requests\User\StoreUserRequest;
+use Modules\User\App\Http\Requests\User\UpdateUserRequest;
+use Modules\User\App\Models\User;
+use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
 {

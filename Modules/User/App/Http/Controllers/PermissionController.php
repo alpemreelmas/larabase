@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Modules\User\App\Http\Requests\Permission\EditPermissionRequest;
+use Spatie\Permission\Models\Permission;
 
 class PermissionController extends Controller
 {
