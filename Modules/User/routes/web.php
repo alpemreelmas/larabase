@@ -25,28 +25,32 @@ Route::get('/dashboard', function () {
     return view('user::dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware(['auth','verified'])->group(function () {
+Route::group([],function (){
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+Route::middleware(['auth','verified'])->prefix("user-management/")->as("user-management.")->group(function () {
+
 
 
     Route::prefix("users")->as("users.")->controller(UserController::class)->group(function () {
         Route::get("/", "index")->name("index")
-            ->middleware("can:users_access");
+            ->middleware("can:user_access");
 
-        Route::middleware("can:users_create")->group(function () {
+        Route::middleware("can:user_create")->group(function () {
             Route::post("/", "store")->name("store");
             Route::get("/create", "create")->name("create");
         });
 
 
-        Route::middleware("can:users_update")->group(function () {
+        Route::middleware("can:user_update")->group(function () {
             Route::get("{user}/edit", "edit")->name("edit");
             Route::put("/{user}", "update")->name("update");
         });
 
-        Route::middleware("can:users_delete")->group(function () {
+        Route::middleware("can:user_delete")->group(function () {
             Route::delete("/{user}", "destroy")->name("delete");
             Route::post("/{id}/restore", "restore")->name("restore");
         });
@@ -57,7 +61,7 @@ Route::middleware(['auth','verified'])->group(function () {
     });
     Route::prefix("permissions")->as("permissions.")->controller(PermissionController::class)->group(function () {
         Route::get("/", "index")->name("index")
-            ->middleware("can:users_access");
+            ->middleware("can:user_access");
 
         /*Route::middleware("can:users_create")->group(function () {
             Route::post("/", "store")->name("store");
@@ -65,12 +69,12 @@ Route::middleware(['auth','verified'])->group(function () {
         });*/
 
 
-        Route::middleware("can:users_update")->group(function () {
+        Route::middleware("can:user_update")->group(function () {
             Route::get("{permission}/edit", "edit")->name("edit");
             Route::put("/{permission}", "update")->name("update");
         });
 
-        /*            Route::middleware("can:users_delete")->group(function () {
+        /*            Route::middleware("can:user_delete")->group(function () {
                         Route::delete("/{user}", "destroy")->name("delete");
                         Route::post("/{id}/restore", "restore")->name("restore");
                     });
@@ -81,20 +85,20 @@ Route::middleware(['auth','verified'])->group(function () {
     });
     Route::prefix("roles")->as("roles.")->controller(RoleController::class)->group(function () {
         Route::get("/", "index")->name("index")
-            ->middleware("can:users_access");
+            ->middleware("can:user_access");
 
-        Route::middleware("can:users_create")->group(function () {
+        Route::middleware("can:user_create")->group(function () {
             Route::post("/", "store")->name("store");
             Route::get("/create", "create")->name("create");
         });
 
 
-        Route::middleware("can:users_update")->group(function () {
+        Route::middleware("can:user_update")->group(function () {
             Route::get("{role}/edit", "edit")->name("edit");
             Route::put("/{role}", "update")->name("update");
         });
 
-        /*            Route::middleware("can:users_delete")->group(function () {
+        /*            Route::middleware("can:user_delete")->group(function () {
                         Route::delete("/{user}", "destroy")->name("delete");
                         Route::post("/{id}/restore", "restore")->name("restore");
                     });

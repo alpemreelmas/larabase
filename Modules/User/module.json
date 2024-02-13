@@ -7,5 +7,10 @@
     "providers": [
         "Modules\\User\\App\\Providers\\UserServiceProvider"
     ],
-    "files": []
+    "files": [],
+    "migration": {
+        "seeds": [
+            "Modules\\User\\Database\\Seeders\\SeedUserRoleAndPermissionSeeder"
+        ]
+    }
 }
