@@ -24,7 +24,7 @@
     <link href="{{asset('aee/')}}/assets/css/dark/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
     <link href="{{asset('aee/')}}/assets/css/dark/widgets/modules-widgets-vlm.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-
+    @stack("css")
 
 </head>
 <body class="layout-boxed">
@@ -903,7 +903,7 @@
     <div id="content" class="main-content">
         <div class="layout-px-spacing">
 
-            <div class="middle-content container-xxl p-0">
+            <div class="middle-content container-xxl p-0 pt-4">
 
             @yield("content")
 
@@ -927,17 +927,19 @@
 <!-- END MAIN CONTAINER -->
 
 <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+<script src="{{asset('aee/')}}/plugins/src/global/vendors.min.js"></script>
 <script src="{{asset('aee/')}}/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="{{asset('aee/')}}/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="{{asset('aee/')}}/plugins/src/mousetrap/mousetrap.min.js"></script>
 <script src="{{asset('aee/')}}/plugins/src/waves/waves.min.js"></script>
 <script src="{{asset('aee/')}}/layouts/vertical-dark-menu/app.js"></script>
+<script src="{{asset('aee/')}}/assets/js/custom.js"></script>
 <!-- END GLOBAL MANDATORY SCRIPTS -->
 
 <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
 <script src="{{asset('aee/')}}/plugins/src/apex/apexcharts.min.js"></script>
 <script src="{{asset('aee/')}}/assets/js/dashboard/dash_1.js"></script>
 <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-
+@stack("js")
 </body>
 </html>

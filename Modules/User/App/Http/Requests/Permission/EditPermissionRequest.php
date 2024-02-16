@@ -12,7 +12,7 @@ class EditPermissionRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return auth()->user()->can("users_update");
+        return auth()->user()->can("user_update");
     }
 
     /**

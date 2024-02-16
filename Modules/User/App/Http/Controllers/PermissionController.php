@@ -22,6 +22,6 @@ class PermissionController extends Controller
     public function update(EditPermissionRequest $request, Permission $permission)
     {
         $permission->update($request->validated());
-        return to_route("user::permissions.index");
+        return to_route("user-management.permissions.index");
     }
 }
