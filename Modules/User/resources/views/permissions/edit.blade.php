@@ -5,6 +5,7 @@
             <div class="widget-content widget-content-area">
                 <div class="row">
                     <div class="col-lg-6 col-12 ">
+                        <x-flash-message />
                         <form method="post" action="{{route("user-management.permissions.update",["permission"=>$permission->id])}}">
                             @csrf
                             @method("PUT")
