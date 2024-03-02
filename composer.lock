@@ -4,8 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c063524c314adc84fdef4d23a83c8d1",
+    "content-hash": "4974f923645ff46bf2cbc106d595ff03",
     "packages": [
+        {
+            "name": "aee/user-module",
+            "version": "v0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alpemreelmas/user-module.git",
+                "reference": "a682c20456fb1271a8f324bb25a20bf2894d7ba2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alpemreelmas/user-module/zipball/a682c20456fb1271a8f324bb25a20bf2894d7ba2",
+                "reference": "a682c20456fb1271a8f324bb25a20bf2894d7ba2",
+                "shasum": ""
+            },
+            "require": {
+                "spatie/laravel-permission": "^6.3"
+            },
+            "type": "laravel-module",
+            "extra": {
+                "laravel": {
+                    "providers": [],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Modules\\User\\": "",
+                    "Modules\\User\\App\\": "app/",
+                    "Modules\\User\\Database\\Seeders\\": "database/seeders/",
+                    "Modules\\User\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alp Emre Elmas",
+                    "email": "elmasalpemre@gmail.com"
+                }
+            ],
+            "description": "This is official user module developed for larabase by Alp Emre Elmas.",
+            "support": {
+                "issues": "https://github.com/alpemreelmas/user-module/issues",
+                "source": "https://github.com/alpemreelmas/user-module/tree/v0.5"
+            },
+            "time": "2024-03-02T19:12:05+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.11.0",
@@ -1044,6 +1093,48 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "joshbrw/laravel-module-installer",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joshbrw/laravel-module-installer.git",
+                "reference": "667820efd0652df8ed61420cd0dec8df1b3ecdd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joshbrw/laravel-module-installer/zipball/667820efd0652df8ed61420cd0dec8df1b3ecdd2",
+                "reference": "667820efd0652df8ed61420cd0dec8df1b3ecdd2",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0",
+                "php": "7.* || 8.*"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0",
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~8.0 || ~9.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Joshbrw\\LaravelModuleInstaller\\LaravelModuleInstallerPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Joshbrw\\LaravelModuleInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/joshbrw/laravel-module-installer/issues",
+                "source": "https://github.com/joshbrw/laravel-module-installer/tree/v2.0.1"
+            },
+            "time": "2021-01-17T21:51:00+00:00"
         },
         {
             "name": "laravel/framework",
