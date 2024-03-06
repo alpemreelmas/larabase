@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4974f923645ff46bf2cbc106d595ff03",
+    "content-hash": "a8e119438194e295dbd05952b0064e1f",
     "packages": [
         {
             "name": "aee/user-module",
-            "version": "v0.5",
+            "version": "v0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alpemreelmas/user-module.git",
-                "reference": "a682c20456fb1271a8f324bb25a20bf2894d7ba2"
+                "reference": "9a58273651af66e95291ebfe186fa1d817fa9914"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alpemreelmas/user-module/zipball/a682c20456fb1271a8f324bb25a20bf2894d7ba2",
-                "reference": "a682c20456fb1271a8f324bb25a20bf2894d7ba2",
+                "url": "https://api.github.com/repos/alpemreelmas/user-module/zipball/9a58273651af66e95291ebfe186fa1d817fa9914",
+                "reference": "9a58273651af66e95291ebfe186fa1d817fa9914",
                 "shasum": ""
             },
             "require": {
@@ -51,9 +51,9 @@
             "description": "This is official user module developed for larabase by Alp Emre Elmas.",
             "support": {
                 "issues": "https://github.com/alpemreelmas/user-module/issues",
-                "source": "https://github.com/alpemreelmas/user-module/tree/v0.5"
+                "source": "https://github.com/alpemreelmas/user-module/tree/v0.5.1"
             },
-            "time": "2024-03-02T19:12:05+00:00"
+            "time": "2024-03-02T19:31:04+00:00"
         },
         {
             "name": "brick/math",

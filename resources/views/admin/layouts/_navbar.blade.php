@@ -66,7 +66,7 @@
 											<div class="d-flex justify-content-between align-items-center">
 												<p>Leonardo Payne</p>
 												<p class="sub-text text-muted">2 min ago</p>
-											</div>	
+											</div>
 											<p class="sub-text text-muted">Project status</p>
 										</div>
 									</a>
@@ -78,7 +78,7 @@
 											<div class="d-flex justify-content-between align-items-center">
 												<p>Carl Henson</p>
 												<p class="sub-text text-muted">30 min ago</p>
-											</div>	
+											</div>
 											<p class="sub-text text-muted">Client meeting</p>
 										</div>
 									</a>
@@ -88,9 +88,9 @@
 										</div>
 										<div class="content">
 											<div class="d-flex justify-content-between align-items-center">
-												<p>Jensen Combs</p>												
+												<p>Jensen Combs</p>
 												<p class="sub-text text-muted">1 hrs ago</p>
-											</div>	
+											</div>
 											<p class="sub-text text-muted">Project updates</p>
 										</div>
 									</a>
@@ -223,11 +223,14 @@
 											</a>
 										</li>
 										<li class="nav-item">
-											<a href="javascript:;" class="nav-link">
-												<i data-feather="log-out"></i>
-												<span>Log Out</span>
-											</a>
-										</li>
+                                            <form action="{{route("logout")}}" method="POST">
+                                                @csrf
+                                                <button type="submit" style="border:none!important; background: transparent!important;" class="nav-link">
+                                                    <i data-feather="log-out"></i>
+                                                    <span>Log Out</span>
+                                                </button>
+                                            </form>
+                                        </li>
 									</ul>
 								</div>
 							</div>
