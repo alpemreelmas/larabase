@@ -18,3 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get("/route-generator",\App\Http\Controllers\RouteController::class);
+
