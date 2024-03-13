@@ -1,0 +1,15 @@
+@can("{{PARENT_PERMISSION}}")
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#{{INDEX}}" role="button" aria-expanded="false"
+           aria-controls="{{INDEX}}">
+            <i class="link-icon" data-feather="{{ICON}}"></i>
+            <span class="link-title">{{ROUTE_NAME}}</span>
+            <i class="link-arrow" data-feather="chevron-down"></i>
+        </a>
+        <div class="collapse" id="{{INDEX}}">
+            <ul class="nav sub-menu">
+                {{SUB_ROUTES}}
+            </ul>
+        </div>
+    </li>
+@endcan

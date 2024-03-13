@@ -1,0 +1,8 @@
+@can("{{PARENT_PERMISSION}}")
+<li class="nav-item">
+    <a href="{{ROUTE}}" class="nav-link">
+        <i class="link-icon" data-feather="{{ICON}}"></i>
+        <span class="link-title">{{ROUTE_NAME}}</span>
+    </a>
+</li>
+@endcan

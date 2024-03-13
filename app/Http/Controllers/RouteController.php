@@ -14,6 +14,6 @@ class RouteController extends Controller
     public function __invoke(Request $request)
     {
 
-        return (new RouteGenerator())->getRouteConfigFiles();
+        return (new RouteGenerator())->run();
     }
 }

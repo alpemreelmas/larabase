@@ -1,0 +1,5 @@
+@can("{{SUB_ROUTE_PERMISSION}}")
+<li class="nav-item">
+    <a href="{{SUB_ROUTE}}" class="nav-link">{{SUB_ROUTE_NAME}}</a>
+</li>
+@endcan
