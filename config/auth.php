@@ -62,7 +62,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => \Modules\User\App\Models\User::class,
+            'model' => getUserModelPath(),
         ],
 
         // 'users' => [

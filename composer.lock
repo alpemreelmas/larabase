@@ -4,57 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8e119438194e295dbd05952b0064e1f",
+    "content-hash": "7a0c22dafea315f941a07932a5f12f3b",
     "packages": [
-        {
-            "name": "aee/user-module",
-            "version": "v0.5.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alpemreelmas/user-module.git",
-                "reference": "9a58273651af66e95291ebfe186fa1d817fa9914"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alpemreelmas/user-module/zipball/9a58273651af66e95291ebfe186fa1d817fa9914",
-                "reference": "9a58273651af66e95291ebfe186fa1d817fa9914",
-                "shasum": ""
-            },
-            "require": {
-                "spatie/laravel-permission": "^6.3"
-            },
-            "type": "laravel-module",
-            "extra": {
-                "laravel": {
-                    "providers": [],
-                    "aliases": []
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Modules\\User\\": "",
-                    "Modules\\User\\App\\": "app/",
-                    "Modules\\User\\Database\\Seeders\\": "database/seeders/",
-                    "Modules\\User\\Database\\Factories\\": "database/factories/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alp Emre Elmas",
-                    "email": "elmasalpemre@gmail.com"
-                }
-            ],
-            "description": "This is official user module developed for larabase by Alp Emre Elmas.",
-            "support": {
-                "issues": "https://github.com/alpemreelmas/user-module/issues",
-                "source": "https://github.com/alpemreelmas/user-module/tree/v0.5.1"
-            },
-            "time": "2024-03-02T19:31:04+00:00"
-        },
         {
             "name": "brick/math",
             "version": "0.11.0",

@@ -222,15 +222,17 @@
 												<span>Switch User</span>
 											</a>
 										</li>
-										<li class="nav-item">
-                                            <form action="{{route("logout")}}" method="POST">
-                                                @csrf
-                                                <button type="submit" style="border:none!important; background: transparent!important;" class="nav-link">
-                                                    <i data-feather="log-out"></i>
-                                                    <span>Log Out</span>
-                                                </button>
-                                            </form>
-                                        </li>
+                                        @if(module_exist("User"))
+                                            <li class="nav-item">
+                                                <form action="{{route("logout")}}" method="POST">
+                                                    @csrf
+                                                    <button type="submit" style="border:none!important; background: transparent!important;" class="nav-link">
+                                                        <i data-feather="log-out"></i>
+                                                        <span>Log Out</span>
+                                                    </button>
+                                                </form>
+                                            </li>
+                                        @endif
 									</ul>
 								</div>
 							</div>
