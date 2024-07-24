@@ -1,5 +1,7 @@
 <?php
 
+/*TODO: make a control convention namings of the functions */
+
 if(!function_exists("authMiddlewareGenerator")){
     function authMiddlewareGenerator(array $middlewares = [],$verified=false)
     {

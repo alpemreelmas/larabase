@@ -21,5 +21,3 @@ Route::get('/dashboard', function () {
     return view('admin.dashboard');
 })->middleware(authMiddlewareGenerator())->name('dashboard');
 
-Route::get("/route-generator",\App\Http\Controllers\RouteController::class);
-
