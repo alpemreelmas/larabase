@@ -8,22 +8,29 @@
     "packages": [
         {
             "name": "aee/route-generator",
-            "version": "v0.1.1",
+            "version": "v0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alpemreelmas/aee-route-generator.git",
-                "reference": "638b43e3769e925118093e2ea8a5c207aa905294"
+                "reference": "c05b75ce9201b8f7b4e62408353ff090aa3b8faf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alpemreelmas/aee-route-generator/zipball/638b43e3769e925118093e2ea8a5c207aa905294",
-                "reference": "638b43e3769e925118093e2ea8a5c207aa905294",
+                "url": "https://api.github.com/repos/alpemreelmas/aee-route-generator/zipball/c05b75ce9201b8f7b4e62408353ff090aa3b8faf",
+                "reference": "c05b75ce9201b8f7b4e62408353ff090aa3b8faf",
                 "shasum": ""
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AeeRouteGenerator\\Providers\\RouteGeneratorServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
-                    "Aee\\RouteGenerator\\": "src/"
+                    "AeeRouteGenerator\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -39,9 +46,9 @@
             "description": "Micro package for larabase to generate automatic routing system.",
             "support": {
                 "issues": "https://github.com/alpemreelmas/aee-route-generator/issues",
-                "source": "https://github.com/alpemreelmas/aee-route-generator/tree/v0.1.1"
+                "source": "https://github.com/alpemreelmas/aee-route-generator/tree/v0.1.5"
             },
-            "time": "2024-07-24T15:26:15+00:00"
+            "time": "2024-07-25T19:28:20+00:00"
         },
         {
             "name": "brick/math",
@@ -8060,16 +8067,16 @@
         },
         {
             "name": "spatie/error-solutions",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/error-solutions.git",
-                "reference": "a014da18f2675ea15af0ba97f7e9aee59e13964f"
+                "reference": "ae7393122eda72eed7cc4f176d1e96ea444f2d67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/error-solutions/zipball/a014da18f2675ea15af0ba97f7e9aee59e13964f",
-                "reference": "a014da18f2675ea15af0ba97f7e9aee59e13964f",
+                "url": "https://api.github.com/repos/spatie/error-solutions/zipball/ae7393122eda72eed7cc4f176d1e96ea444f2d67",
+                "reference": "ae7393122eda72eed7cc4f176d1e96ea444f2d67",
                 "shasum": ""
             },
             "require": {
@@ -8122,7 +8129,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/error-solutions/issues",
-                "source": "https://github.com/spatie/error-solutions/tree/1.1.0"
+                "source": "https://github.com/spatie/error-solutions/tree/1.1.1"
             },
             "funding": [
                 {
@@ -8130,7 +8137,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-07-22T08:18:22+00:00"
+            "time": "2024-07-25T11:06:04+00:00"
         },
         {
             "name": "spatie/flare-client-php",

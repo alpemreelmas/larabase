@@ -1,4 +1,11 @@
 <?php return array (
+  'aee/route-generator' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AeeRouteGenerator\\Providers\\RouteGeneratorServiceProvider',
+    ),
+  ),
   'laravel/breeze' => 
   array (
     'providers' => 
