@@ -4,6 +4,7 @@
     'providers' => 
     array (
       0 => 'AeeRouteGenerator\\Providers\\RouteGeneratorServiceProvider',
+      1 => 'AeeRouteGenerator\\Providers\\ConsoleServiceProvider',
     ),
   ),
   'laravel/breeze' => 
